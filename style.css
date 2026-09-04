@@ -912,6 +912,22 @@ button:focus-visible {
     cursor: pointer;
 }
 
+@media (max-width: 480px) {
+
+    .share-language-choice {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, max-content);
+
+        justify-content: center;
+
+        column-gap: 42px;
+        row-gap: 16px;
+    }
+
+}
+
 .share-button {
     width: 100%;
 
