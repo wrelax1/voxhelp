@@ -7602,7 +7602,7 @@ INSTALLATION DE L'APP SUR VOTRE SMARTPHONE / TABLETTE
 
 Accéder à l'application ici :
 
-https://wrelax1.github.io/ma-voix-multilingue/
+https://wrelax1.github.io/voxhelp/
 
 Sur IPHONE / IPAD
 
@@ -7689,7 +7689,7 @@ INSTALLING VOXHELP ON YOUR SMARTPHONE / TABLET
 
 Open the application here:
 
-https://wrelax1.github.io/ma-voix-multilingue/
+https://wrelax1.github.io/voxhelp/
 
 On IPHONE / IPAD
 
@@ -7776,7 +7776,7 @@ VOXHELP AUF SMARTPHONE / TABLET INSTALLIEREN
 
 Öffnen Sie die Anwendung hier:
 
-https://wrelax1.github.io/ma-voix-multilingue/
+https://wrelax1.github.io/voxhelp/
 
 Auf IPHONE / IPAD
 
@@ -7863,7 +7863,7 @@ INSTALLAZIONE DI VOXHELP SU SMARTPHONE / TABLET
 
 Acceda all'applicazione qui:
 
-https://wrelax1.github.io/ma-voix-multilingue/
+https://wrelax1.github.io/voxhelp/
 
 Su IPHONE / IPAD
 
