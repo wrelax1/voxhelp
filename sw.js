@@ -1,4 +1,4 @@
-const CACHE_NAME = "voxhelp-v33";
+const CACHE_NAME = "voxhelp-v34";
 
 const FILES_TO_CACHE = [
     "./",
@@ -59,7 +59,6 @@ self.addEventListener("activate", function(event) {
 
                         const isVoxHelpCache =
                             cacheName.startsWith("voxhelp-") ||
-                            cacheName.startsWith("ma-voix-multilingue-");
 
                         if (
                             isVoxHelpCache &&
