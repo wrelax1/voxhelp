@@ -8342,7 +8342,7 @@ async function updateAppVersion() {
 
         const match =
             swText.match(
-                /ma-voix-multilingue-v(\d+)/
+                /voxhelp-v(\d+)/
             );
 
 
