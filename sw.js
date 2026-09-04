@@ -58,7 +58,7 @@ self.addEventListener("activate", function(event) {
                     cacheNames.map(function(cacheName) {
 
                         const isVoxHelpCache =
-                            cacheName.startsWith("voxhelp-") ||
+                            cacheName.startsWith("voxhelp-")
 
                         if (
                             isVoxHelpCache &&
