@@ -5931,7 +5931,7 @@ const ABOUT_SCREEN_TRANSLATIONS = {
             "E-Mail des Empfängers",
 			
 		recipientLanguage:
-			"Lingua del destinatario:",
+			"Sprache des Empfängers:",
 
         emailPlaceholder:
             "adresse@email.com",
@@ -5993,6 +5993,9 @@ const ABOUT_SCREEN_TRANSLATIONS = {
 
         emailLabel:
             "Email del destinatario",
+			
+		recipientLanguage:
+			"Lingua del destinatario:",
 
         emailPlaceholder:
             "indirizzo@email.com",
