@@ -405,6 +405,7 @@ const PAIN_TRANSLATIONS = {
     fr: {
         title: "Douleur",
         where: "Où avez-vous mal ?",
+        detail: "Où exactement ?",
         intensity: "Quelle intensité ?",
         changeLocation: "← CHANGER L'ENDROIT"
     },
@@ -412,6 +413,7 @@ const PAIN_TRANSLATIONS = {
     en: {
         title: "Pain",
         where: "Where does it hurt?",
+        detail: "Where exactly?",
         intensity: "How severe is the pain?",
         changeLocation: "← CHANGE LOCATION"
     },
@@ -419,6 +421,7 @@ const PAIN_TRANSLATIONS = {
     de: {
         title: "Schmerzen",
         where: "Wo haben Sie Schmerzen?",
+        detail: "Wo genau?",
         intensity: "Wie stark sind die Schmerzen?",
         changeLocation: "← ANDERE STELLE"
     },
@@ -426,6 +429,7 @@ const PAIN_TRANSLATIONS = {
     it: {
         title: "Dolore",
         where: "Dove ha dolore?",
+        detail: "Dove esattamente?",
         intensity: "Quanto è forte il dolore?",
         changeLocation: "← CAMBIA ZONA"
     }
@@ -866,6 +870,479 @@ const PAIN_LOCATIONS = {
         it: {
             label: "PIEDE<br>DESTRO",
             speech: "Ho dolore al piede destro"
+        }
+    }
+
+};
+
+/* =========================================
+   DOULEUR — SOUS-LOCALISATIONS
+   ========================================= */
+
+const PAIN_SUBLOCATIONS = {
+
+    head: {
+
+        front: {
+            label: {
+                fr: "FRONT",
+                en: "FOREHEAD",
+                de: "STIRN",
+                it: "FRONTE"
+            },
+            speech: {
+                fr: "J’ai mal au front",
+                en: "My forehead hurts",
+                de: "Ich habe Schmerzen an der Stirn",
+                it: "Ho dolore alla fronte"
+            }
+        },
+
+        backHead: {
+            label: {
+                fr: "ARRIÈRE",
+                en: "BACK OF<br>HEAD",
+                de: "HINTERKOPF",
+                it: "DIETRO<br>LA TESTA"
+            },
+            speech: {
+                fr: "J’ai mal à l’arrière de la tête",
+                en: "I have pain in the back of my head",
+                de: "Ich habe Schmerzen am Hinterkopf",
+                it: "Ho dolore dietro la testa"
+            }
+        },
+
+        leftTemple: {
+            label: {
+                fr: "TEMPE G",
+                en: "LEFT<br>TEMPLE",
+                de: "LINKE<br>SCHLÄFE",
+                it: "TEMPIA SX"
+            },
+            speech: {
+                fr: "J’ai mal à la tempe gauche",
+                en: "I have pain in my left temple",
+                de: "Ich habe Schmerzen an der linken Schläfe",
+                it: "Ho dolore alla tempia sinistra"
+            }
+        },
+
+        rightTemple: {
+            label: {
+                fr: "TEMPE D",
+                en: "RIGHT<br>TEMPLE",
+                de: "RECHTE<br>SCHLÄFE",
+                it: "TEMPIA DX"
+            },
+            speech: {
+                fr: "J’ai mal à la tempe droite",
+                en: "I have pain in my right temple",
+                de: "Ich habe Schmerzen an der rechten Schläfe",
+                it: "Ho dolore alla tempia destra"
+            }
+        },
+
+        leftEye: {
+            label: {
+                fr: "ŒIL G",
+                en: "LEFT EYE",
+                de: "LINKES AUGE",
+                it: "OCCHIO SX"
+            },
+            speech: {
+                fr: "J’ai mal à l’œil gauche",
+                en: "My left eye hurts",
+                de: "Mein linkes Auge tut weh",
+                it: "Ho dolore all’occhio sinistro"
+            }
+        },
+
+        rightEye: {
+            label: {
+                fr: "ŒIL D",
+                en: "RIGHT EYE",
+                de: "RECHTES AUGE",
+                it: "OCCHIO DX"
+            },
+            speech: {
+                fr: "J’ai mal à l’œil droit",
+                en: "My right eye hurts",
+                de: "Mein rechtes Auge tut weh",
+                it: "Ho dolore all’occhio destro"
+            }
+        },
+
+        leftEar: {
+            label: {
+                fr: "OREILLE G",
+                en: "LEFT EAR",
+                de: "LINKES OHR",
+                it: "ORECCHIO SX"
+            },
+            speech: {
+                fr: "J’ai mal à l’oreille gauche",
+                en: "My left ear hurts",
+                de: "Mein linkes Ohr tut weh",
+                it: "Ho dolore all’orecchio sinistro"
+            }
+        },
+
+        rightEar: {
+            label: {
+                fr: "OREILLE D",
+                en: "RIGHT EAR",
+                de: "RECHTES OHR",
+                it: "ORECCHIO DX"
+            },
+            speech: {
+                fr: "J’ai mal à l’oreille droite",
+                en: "My right ear hurts",
+                de: "Mein rechtes Ohr tut weh",
+                it: "Ho dolore all’orecchio destro"
+            }
+        },
+
+        jaw: {
+            label: {
+                fr: "MÂCHOIRE",
+                en: "JAW",
+                de: "KIEFER",
+                it: "MASCELLA"
+            },
+            speech: {
+                fr: "J’ai mal à la mâchoire",
+                en: "My jaw hurts",
+                de: "Ich habe Schmerzen am Kiefer",
+                it: "Ho dolore alla mascella"
+            }
+        },
+
+        wholeHead: {
+            label: {
+                fr: "TOUTE<br>LA TÊTE",
+                en: "WHOLE<br>HEAD",
+                de: "GANZER<br>KOPF",
+                it: "TUTTA<br>LA TESTA"
+            },
+            speech: {
+                fr: "J’ai mal à toute la tête",
+                en: "My whole head hurts",
+                de: "Mein ganzer Kopf tut weh",
+                it: "Mi fa male tutta la testa"
+            }
+        }
+    },
+
+
+    chest: {
+
+        center: {
+            label: {
+                fr: "CENTRE",
+                en: "CENTER",
+                de: "MITTE",
+                it: "CENTRO"
+            },
+            speech: {
+                fr: "J’ai mal au centre de la poitrine",
+                en: "I have pain in the center of my chest",
+                de: "Ich habe Schmerzen in der Mitte der Brust",
+                it: "Ho dolore al centro del petto"
+            }
+        },
+
+        left: {
+            label: {
+                fr: "GAUCHE",
+                en: "LEFT",
+                de: "LINKS",
+                it: "SINISTRA"
+            },
+            speech: {
+                fr: "J’ai mal du côté gauche de la poitrine",
+                en: "I have pain on the left side of my chest",
+                de: "Ich habe Schmerzen auf der linken Seite der Brust",
+                it: "Ho dolore sul lato sinistro del petto"
+            }
+        },
+
+        right: {
+            label: {
+                fr: "DROITE",
+                en: "RIGHT",
+                de: "RECHTS",
+                it: "DESTRA"
+            },
+            speech: {
+                fr: "J’ai mal du côté droit de la poitrine",
+                en: "I have pain on the right side of my chest",
+                de: "Ich habe Schmerzen auf der rechten Seite der Brust",
+                it: "Ho dolore sul lato destro del petto"
+            }
+        },
+
+        leftRibs: {
+            label: {
+                fr: "CÔTES G",
+                en: "LEFT RIBS",
+                de: "LINKE<br>RIPPEN",
+                it: "COSTOLE SX"
+            },
+            speech: {
+                fr: "J’ai mal aux côtes à gauche",
+                en: "I have pain in my left ribs",
+                de: "Ich habe Schmerzen an den linken Rippen",
+                it: "Ho dolore alle costole a sinistra"
+            }
+        },
+
+        rightRibs: {
+            label: {
+                fr: "CÔTES D",
+                en: "RIGHT RIBS",
+                de: "RECHTE<br>RIPPEN",
+                it: "COSTOLE DX"
+            },
+            speech: {
+                fr: "J’ai mal aux côtes à droite",
+                en: "I have pain in my right ribs",
+                de: "Ich habe Schmerzen an den rechten Rippen",
+                it: "Ho dolore alle costole a destra"
+            }
+        },
+
+        wholeChest: {
+            label: {
+                fr: "TOUTE LA<br>POITRINE",
+                en: "WHOLE<br>CHEST",
+                de: "GANZE<br>BRUST",
+                it: "TUTTO<br>IL PETTO"
+            },
+            speech: {
+                fr: "J’ai mal dans toute la poitrine",
+                en: "My whole chest hurts",
+                de: "Ich habe Schmerzen in der ganzen Brust",
+                it: "Ho dolore in tutto il petto"
+            }
+        }
+    },
+
+
+    back: {
+
+        upper: {
+            label: {
+                fr: "HAUT",
+                en: "UPPER",
+                de: "OBEN",
+                it: "ALTO"
+            },
+            speech: {
+                fr: "J’ai mal dans le haut du dos",
+                en: "I have pain in my upper back",
+                de: "Ich habe Schmerzen im oberen Rücken",
+                it: "Ho dolore nella parte alta della schiena"
+            }
+        },
+
+        middle: {
+            label: {
+                fr: "MILIEU",
+                en: "MIDDLE",
+                de: "MITTE",
+                it: "CENTRO"
+            },
+            speech: {
+                fr: "J’ai mal au milieu du dos",
+                en: "I have pain in the middle of my back",
+                de: "Ich habe Schmerzen im mittleren Rücken",
+                it: "Ho dolore al centro della schiena"
+            }
+        },
+
+        lower: {
+            label: {
+                fr: "BAS",
+                en: "LOWER",
+                de: "UNTEN",
+                it: "BASSO"
+            },
+            speech: {
+                fr: "J’ai mal dans le bas du dos",
+                en: "I have pain in my lower back",
+                de: "Ich habe Schmerzen im unteren Rücken",
+                it: "Ho dolore nella parte bassa della schiena"
+            }
+        },
+
+        left: {
+            label: {
+                fr: "GAUCHE",
+                en: "LEFT",
+                de: "LINKS",
+                it: "SINISTRA"
+            },
+            speech: {
+                fr: "J’ai mal du côté gauche du dos",
+                en: "I have pain on the left side of my back",
+                de: "Ich habe Schmerzen auf der linken Seite des Rückens",
+                it: "Ho dolore sul lato sinistro della schiena"
+            }
+        },
+
+        right: {
+            label: {
+                fr: "DROITE",
+                en: "RIGHT",
+                de: "RECHTS",
+                it: "DESTRA"
+            },
+            speech: {
+                fr: "J’ai mal du côté droit du dos",
+                en: "I have pain on the right side of my back",
+                de: "Ich habe Schmerzen auf der rechten Seite des Rückens",
+                it: "Ho dolore sul lato destro della schiena"
+            }
+        },
+
+        wholeBack: {
+            label: {
+                fr: "TOUT<br>LE DOS",
+                en: "WHOLE<br>BACK",
+                de: "GANZER<br>RÜCKEN",
+                it: "TUTTA LA<br>SCHIENA"
+            },
+            speech: {
+                fr: "J’ai mal dans tout le dos",
+                en: "My whole back hurts",
+                de: "Mein ganzer Rücken tut weh",
+                it: "Mi fa male tutta la schiena"
+            }
+        }
+    },
+
+
+    abdomen: {
+
+        upper: {
+            label: {
+                fr: "HAUT",
+                en: "UPPER",
+                de: "OBERBAUCH",
+                it: "ALTO"
+            },
+            speech: {
+                fr: "J’ai mal dans le haut du ventre",
+                en: "I have pain in my upper abdomen",
+                de: "Ich habe Schmerzen im Oberbauch",
+                it: "Ho dolore nella parte alta dell’addome"
+            }
+        },
+
+        left: {
+            label: {
+                fr: "GAUCHE",
+                en: "LEFT",
+                de: "LINKS",
+                it: "SINISTRA"
+            },
+            speech: {
+                fr: "J’ai mal du côté gauche du ventre",
+                en: "I have pain on the left side of my abdomen",
+                de: "Ich habe Schmerzen auf der linken Seite des Bauchs",
+                it: "Ho dolore sul lato sinistro dell’addome"
+            }
+        },
+
+        right: {
+            label: {
+                fr: "DROITE",
+                en: "RIGHT",
+                de: "RECHTS",
+                it: "DESTRA"
+            },
+            speech: {
+                fr: "J’ai mal du côté droit du ventre",
+                en: "I have pain on the right side of my abdomen",
+                de: "Ich habe Schmerzen auf der rechten Seite des Bauchs",
+                it: "Ho dolore sul lato destro dell’addome"
+            }
+        },
+
+        center: {
+            label: {
+                fr: "CENTRE",
+                en: "CENTER",
+                de: "MITTE",
+                it: "CENTRO"
+            },
+            speech: {
+                fr: "J’ai mal au centre du ventre",
+                en: "I have pain in the center of my abdomen",
+                de: "Ich habe Schmerzen in der Mitte des Bauchs",
+                it: "Ho dolore al centro dell’addome"
+            }
+        },
+
+        lowerAbdomen: {
+            label: {
+                fr: "BAS-VENTRE",
+                en: "LOWER<br>ABDOMEN",
+                de: "UNTERBAUCH",
+                it: "BASSO<br>VENTRE"
+            },
+            speech: {
+                fr: "J’ai mal dans le bas-ventre",
+                en: "I have pain in my lower abdomen",
+                de: "Ich habe Schmerzen im Unterbauch",
+                it: "Ho dolore nel basso ventre"
+            }
+        },
+
+        bladder: {
+            label: {
+                fr: "VESSIE",
+                en: "BLADDER",
+                de: "BLASE",
+                it: "VESCICA"
+            },
+            speech: {
+                fr: "J’ai mal à la vessie",
+                en: "I have pain in my bladder area",
+                de: "Ich habe Schmerzen im Bereich der Blase",
+                it: "Ho dolore alla vescica"
+            }
+        },
+
+        genitals: {
+            label: {
+                fr: "ORGANES<br>GÉNITAUX",
+                en: "GENITAL<br>AREA",
+                de: "GENITAL-<br>BEREICH",
+                it: "GENITALI"
+            },
+            speech: {
+                fr: "J’ai mal aux organes génitaux",
+                en: "I have pain in my genital area",
+                de: "Ich habe Schmerzen im Genitalbereich",
+                it: "Ho dolore nella zona genitale"
+            }
+        },
+
+        wholeAbdomen: {
+            label: {
+                fr: "TOUT LE<br>VENTRE",
+                en: "WHOLE<br>ABDOMEN",
+                de: "GANZER<br>BAUCH",
+                it: "TUTTO<br>L’ADDOME"
+            },
+            speech: {
+                fr: "J’ai mal dans tout le ventre",
+                en: "My whole abdomen hurts",
+                de: "Ich habe Schmerzen im ganzen Bauch",
+                it: "Ho dolore in tutto l’addome"
+            }
         }
     }
 
@@ -5192,9 +5669,32 @@ function updatePainLanguage() {
         }
     );
 
+	const detailTitle =
+		document.getElementById(
+			"painDetailTitle"
+		);
 
-    updatePainIntensityTitle();
-}
+	if (detailTitle) {
+		detailTitle.textContent =
+			translation.detail;
+	}
+
+
+	const detailBackButton =
+		document.getElementById(
+			"painDetailBackButton"
+		);
+
+	if (detailBackButton) {
+		detailBackButton.textContent =
+			translation.changeLocation;
+	}
+
+
+	renderPainDetailButtons();
+
+		updatePainIntensityTitle();
+	}
 
 function updatePainIntensityTitle() {
 
@@ -7353,6 +7853,75 @@ if (
 /* Douleur */
 
 let selectedPainLocation = "";
+let selectedPainSubLocation = "";
+
+
+function renderPainDetailButtons() {
+
+    const container =
+        document.getElementById(
+            "painDetailButtons"
+        );
+
+    if (!container) {
+        return;
+    }
+
+
+    container.innerHTML = "";
+
+
+    const details =
+        PAIN_SUBLOCATIONS[
+            selectedPainLocation
+        ];
+
+    if (!details) {
+        return;
+    }
+
+
+    Object.entries(details).forEach(
+        function(entry) {
+
+            const detailKey =
+                entry[0];
+
+            const detail =
+                entry[1];
+
+            const label =
+                detail.label[
+                    patientLanguage
+                ] ||
+                detail.label.fr;
+
+
+            const button =
+                document.createElement(
+                    "button"
+                );
+
+            button.type =
+                "button";
+
+            button.innerHTML =
+                label;
+
+            button.onclick =
+                function() {
+                    selectPainSubLocation(
+                        detailKey
+                    );
+                };
+
+
+            container.appendChild(
+                button
+            );
+        }
+    );
+}
 
 
 function selectPainLocation(locationKey) {
@@ -7361,11 +7930,68 @@ function selectPainLocation(locationKey) {
         return;
     }
 
+
     selectedPainLocation =
         locationKey;
 
+    selectedPainSubLocation =
+        "";
+
+
     document
         .getElementById("painStep1")
+        .classList.add("hidden");
+
+
+    if (PAIN_SUBLOCATIONS[locationKey]) {
+
+        document
+            .getElementById("painStep2")
+            .classList.add("hidden");
+
+        document
+            .getElementById("painStepDetail")
+            .classList.remove("hidden");
+
+        renderPainDetailButtons();
+
+        return;
+    }
+
+
+    document
+        .getElementById("painStepDetail")
+        .classList.add("hidden");
+
+    document
+        .getElementById("painStep2")
+        .classList.remove("hidden");
+
+    updatePainIntensityTitle();
+}
+
+
+function selectPainSubLocation(detailKey) {
+
+    const details =
+        PAIN_SUBLOCATIONS[
+            selectedPainLocation
+        ];
+
+    if (
+        !details ||
+        !details[detailKey]
+    ) {
+        return;
+    }
+
+
+    selectedPainSubLocation =
+        detailKey;
+
+
+    document
+        .getElementById("painStepDetail")
         .classList.add("hidden");
 
     document
@@ -7380,26 +8006,64 @@ function selectPainLevel(level) {
 
     if (
         selectedPainLocation === "" ||
-        !PAIN_LOCATIONS[selectedPainLocation]
+        !PAIN_LOCATIONS[
+            selectedPainLocation
+        ]
     ) {
         return;
     }
 
 
-    const location =
-        PAIN_LOCATIONS[
-            selectedPainLocation
-        ];
+    let caregiverSpeech = "";
 
 
-    const caregiverLocation =
-        location[
-            caregiverLanguage
-        ];
+    if (selectedPainSubLocation !== "") {
+
+        const details =
+            PAIN_SUBLOCATIONS[
+                selectedPainLocation
+            ];
+
+        if (
+            details &&
+            details[
+                selectedPainSubLocation
+            ]
+        ) {
+
+            const detail =
+                details[
+                    selectedPainSubLocation
+                ];
+
+            caregiverSpeech =
+                detail.speech[
+                    caregiverLanguage
+                ] ||
+                detail.speech.fr;
+        }
+    }
 
 
-    if (!caregiverLocation) {
-        return;
+    if (caregiverSpeech === "") {
+
+        const location =
+            PAIN_LOCATIONS[
+                selectedPainLocation
+            ];
+
+        const caregiverLocation =
+            location[
+                caregiverLanguage
+            ] ||
+            location.fr;
+
+        if (!caregiverLocation) {
+            return;
+        }
+
+        caregiverSpeech =
+            caregiverLocation.speech;
     }
 
 
@@ -7409,44 +8073,37 @@ function selectPainLevel(level) {
     if (caregiverLanguage === "fr") {
 
         sentence =
-            caregiverLocation.speech +
+            caregiverSpeech +
             ". Douleur " +
             level +
             " sur 10.";
-
     }
-
 
     else if (caregiverLanguage === "en") {
 
         sentence =
-            caregiverLocation.speech +
+            caregiverSpeech +
             ". Pain level " +
             level +
             " out of 10.";
-
     }
-
 
     else if (caregiverLanguage === "de") {
 
         sentence =
-            caregiverLocation.speech +
+            caregiverSpeech +
             ". Schmerzstärke " +
             level +
             " von 10.";
-
     }
-
 
     else if (caregiverLanguage === "it") {
 
         sentence =
-            caregiverLocation.speech +
+            caregiverSpeech +
             ". Dolore " +
             level +
             " su 10.";
-
     }
 
 
@@ -7460,18 +8117,38 @@ function selectPainLevel(level) {
 function changePainLocation() {
 
     selectedPainLocation = "";
+    selectedPainSubLocation = "";
 
-    document.getElementById("painStep2").classList.add("hidden");
-    document.getElementById("painStep1").classList.remove("hidden");
+    document
+        .getElementById("painStepDetail")
+        .classList.add("hidden");
+
+    document
+        .getElementById("painStep2")
+        .classList.add("hidden");
+
+    document
+        .getElementById("painStep1")
+        .classList.remove("hidden");
 }
 
 
 function resetPain() {
 
     selectedPainLocation = "";
+    selectedPainSubLocation = "";
 
-    document.getElementById("painStep2").classList.add("hidden");
-    document.getElementById("painStep1").classList.remove("hidden");
+    document
+        .getElementById("painStepDetail")
+        .classList.add("hidden");
+
+    document
+        .getElementById("painStep2")
+        .classList.add("hidden");
+
+    document
+        .getElementById("painStep1")
+        .classList.remove("hidden");
 }
 
 
