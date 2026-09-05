@@ -389,6 +389,17 @@ button:focus-visible {
     margin-top: clamp(14px, 3vw, 22px);
 }
 
+.pain-scale {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
 .pain-scale button {
     min-width: 0;
 
@@ -397,6 +408,10 @@ button:focus-visible {
     padding: 6px;
 
     font-size: clamp(25px, 6vw, 38px);
+}
+
+.pain-scale .pain-level-ten {
+    grid-column: 2 / 3;
 }
 
 .change-location {
