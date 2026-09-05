@@ -8587,15 +8587,21 @@ function openMissingVoiceModal(language) {
     }
 
 
-    const chooseButton =
-        document.getElementById(
-            "missingVoiceChooseButton"
-        );
+	const chooseButton =
+		document.getElementById(
+			"missingVoiceChooseButton"
+		);
 
-    if (chooseButton) {
-        chooseButton.textContent =
-            translation.chooseButton;
-    }
+	if (chooseButton) {
+
+		chooseButton.textContent =
+			translation.chooseButton;
+
+		chooseButton.hidden =
+			!SUPPORTED_LANGUAGES.includes(
+				language
+			);
+	}
 
 
     const closeButton =
