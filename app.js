@@ -777,6 +777,52 @@ const PAIN_LOCATIONS = {
         }
     },
 
+    buttocks: {
+
+        fr: {
+            label: "FESSES",
+            speech: "J’ai mal aux fesses"
+        },
+
+        en: {
+            label: "BUTTOCKS",
+            speech: "I have pain in my buttocks"
+        },
+
+        de: {
+            label: "GESÄSS",
+            speech: "Ich habe Schmerzen am Gesäß"
+        },
+
+        it: {
+            label: "NATICHE",
+            speech: "Ho dolore alle natiche"
+        }
+    },
+
+
+    anus: {
+
+        fr: {
+            label: "ANUS",
+            speech: "J’ai mal à l’anus"
+        },
+
+        en: {
+            label: "ANUS",
+            speech: "I have pain in my anus"
+        },
+
+        de: {
+            label: "ANUS",
+            speech: "Ich habe Schmerzen am Anus"
+        },
+
+        it: {
+            label: "ANO",
+            speech: "Ho dolore all’ano"
+        }
+    }
 
     leftLeg: {
 
@@ -1037,21 +1083,6 @@ const PAIN_SUBLOCATIONS = {
 
     chest: {
 
-        center: {
-            label: {
-                fr: "CENTRE",
-                en: "CENTER",
-                de: "MITTE",
-                it: "CENTRO"
-            },
-            speech: {
-                fr: "J’ai mal au centre de la poitrine",
-                en: "I have pain in the center of my chest",
-                de: "Ich habe Schmerzen in der Mitte der Brust",
-                it: "Ho dolore al centro del petto"
-            }
-        },
-
         left: {
             label: {
                 fr: "GAUCHE",
@@ -1112,6 +1143,21 @@ const PAIN_SUBLOCATIONS = {
             }
         },
 
+        center: {
+            label: {
+                fr: "CENTRE",
+                en: "CENTER",
+                de: "MITTE",
+                it: "CENTRO"
+            },
+            speech: {
+                fr: "J’ai mal au centre de la poitrine",
+                en: "I have pain in the center of my chest",
+                de: "Ich habe Schmerzen in der Mitte der Brust",
+                it: "Ho dolore al centro del petto"
+            }
+        },
+
         wholeChest: {
             label: {
                 fr: "TOUTE LA<br>POITRINE",
@@ -1126,6 +1172,7 @@ const PAIN_SUBLOCATIONS = {
                 it: "Ho dolore in tutto il petto"
             }
         }
+
     },
 
 
@@ -1161,21 +1208,6 @@ const PAIN_SUBLOCATIONS = {
             }
         },
 
-        lower: {
-            label: {
-                fr: "BAS",
-                en: "LOWER",
-                de: "UNTEN",
-                it: "BASSO"
-            },
-            speech: {
-                fr: "J’ai mal dans le bas du dos",
-                en: "I have pain in my lower back",
-                de: "Ich habe Schmerzen im unteren Rücken",
-                it: "Ho dolore nella parte bassa della schiena"
-            }
-        },
-
         left: {
             label: {
                 fr: "GAUCHE",
@@ -1206,6 +1238,21 @@ const PAIN_SUBLOCATIONS = {
             }
         },
 
+        lower: {
+            label: {
+                fr: "BAS",
+                en: "LOWER",
+                de: "UNTEN",
+                it: "BASSO"
+            },
+            speech: {
+                fr: "J’ai mal dans le bas du dos",
+                en: "I have pain in my lower back",
+                de: "Ich habe Schmerzen im unteren Rücken",
+                it: "Ho dolore nella parte bassa della schiena"
+            }
+        },
+
         wholeBack: {
             label: {
                 fr: "TOUT<br>LE DOS",
@@ -1220,6 +1267,7 @@ const PAIN_SUBLOCATIONS = {
                 it: "Mi fa male tutta la schiena"
             }
         }
+
     },
 
 
@@ -1237,6 +1285,21 @@ const PAIN_SUBLOCATIONS = {
                 en: "I have pain in my upper abdomen",
                 de: "Ich habe Schmerzen im Oberbauch",
                 it: "Ho dolore nella parte alta dell’addome"
+            }
+        },
+
+        center: {
+            label: {
+                fr: "CENTRE",
+                en: "CENTER",
+                de: "MITTE",
+                it: "CENTRO"
+            },
+            speech: {
+                fr: "J’ai mal au centre du ventre",
+                en: "I have pain in the center of my abdomen",
+                de: "Ich habe Schmerzen in der Mitte des Bauchs",
+                it: "Ho dolore al centro dell’addome"
             }
         },
 
@@ -1267,21 +1330,6 @@ const PAIN_SUBLOCATIONS = {
                 en: "I have pain on the right side of my abdomen",
                 de: "Ich habe Schmerzen auf der rechten Seite des Bauchs",
                 it: "Ho dolore sul lato destro dell’addome"
-            }
-        },
-
-        center: {
-            label: {
-                fr: "CENTRE",
-                en: "CENTER",
-                de: "MITTE",
-                it: "CENTRO"
-            },
-            speech: {
-                fr: "J’ai mal au centre du ventre",
-                en: "I have pain in the center of my abdomen",
-                de: "Ich habe Schmerzen in der Mitte des Bauchs",
-                it: "Ho dolore al centro dell’addome"
             }
         },
 
@@ -1344,6 +1392,70 @@ const PAIN_SUBLOCATIONS = {
                 it: "Ho dolore in tutto l’addome"
             }
         }
+    },
+	
+	    buttocks: {
+
+        left: {
+            label: {
+                fr: "GAUCHE",
+                en: "LEFT",
+                de: "LINKS",
+                it: "SINISTRA"
+            },
+            speech: {
+                fr: "J’ai mal à la fesse gauche",
+                en: "I have pain in my left buttock",
+                de: "Ich habe Schmerzen an der linken Gesäßhälfte",
+                it: "Ho dolore alla natica sinistra"
+            }
+        },
+
+        right: {
+            label: {
+                fr: "DROITE",
+                en: "RIGHT",
+                de: "RECHTS",
+                it: "DESTRA"
+            },
+            speech: {
+                fr: "J’ai mal à la fesse droite",
+                en: "I have pain in my right buttock",
+                de: "Ich habe Schmerzen an der rechten Gesäßhälfte",
+                it: "Ho dolore alla natica destra"
+            }
+        },
+
+        sacrumCoccyx: {
+            label: {
+                fr: "SACRUM /<br>COCCYX",
+                en: "SACRUM /<br>COCCYX",
+                de: "KREUZBEIN /<br>STEISSBEIN",
+                it: "SACRO /<br>COCCIGE"
+            },
+            speech: {
+                fr: "J’ai mal au niveau du sacrum ou du coccyx",
+                en: "I have pain around my sacrum or coccyx",
+                de: "Ich habe Schmerzen am Kreuzbein oder Steißbein",
+                it: "Ho dolore al sacro o al coccige"
+            }
+        },
+
+        both: {
+            label: {
+                fr: "LES DEUX<br>FESSES",
+                en: "BOTH<br>BUTTOCKS",
+                de: "BEIDE<br>GESÄSSHÄLFTEN",
+                it: "ENTRAMBE<br>LE NATICHE"
+            },
+            speech: {
+                fr: "J’ai mal aux deux fesses",
+                en: "I have pain in both buttocks",
+                de: "Ich habe Schmerzen an beiden Gesäßhälften",
+                it: "Ho dolore a entrambe le natiche"
+            }
+        }
+
     }
 
 };
@@ -5620,6 +5732,12 @@ function updatePainLanguage() {
 
         painLocationRightHip:
             "rightHip",
+			
+		painLocationButtocks:
+            "buttocks",
+
+        painLocationAnus:
+            "anus",
 
         painLocationLeftLeg:
             "leftLeg",
