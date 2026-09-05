@@ -12,11 +12,26 @@ const SUPPORTED_LANGUAGES = [
     "it"
 ];
 
+/*
+   Langues disponibles pour l'affichage
+   destiné au patient.
+*/
+const PATIENT_LANGUAGES = [
+    "fr",
+    "en",
+    "de",
+    "it",
+    "es",
+    "pt"
+];
+
 const LANGUAGE_LOCALES = {
     fr: "fr-FR",
     en: "en-GB",
     de: "de-DE",
-    it: "it-IT"
+    it: "it-IT",
+    es: "es-ES",
+    pt: "pt-PT"
 };
 
 
@@ -34,10 +49,19 @@ const QUICK_PHRASES = {
         de: {
             label: "JA",
             speech: "Ja"
-        },
         it: {
             label: "SÌ",
             speech: "Sì"
+        },
+
+        es: {
+            label: "SÍ",
+            speech: "Sí"
+        },
+
+        pt: {
+            label: "SIM",
+            speech: "Sim"
         }
     },
 
@@ -57,6 +81,16 @@ const QUICK_PHRASES = {
         it: {
             label: "NO",
             speech: "No"
+        },
+
+        es: {
+            label: "NO",
+            speech: "No"
+        },
+
+        pt: {
+            label: "NÃO",
+            speech: "Não"
         }
     },
 
@@ -76,6 +110,16 @@ const QUICK_PHRASES = {
         it: {
             label: "STOP",
             speech: "Stop, per favore"
+        },
+
+        es: {
+            label: "STOP",
+            speech: "Pare, por favor"
+        },
+
+        pt: {
+            label: "STOP",
+            speech: "Pare, por favor"
         }
     }
 
@@ -161,6 +205,44 @@ const HOME_TRANSLATIONS = {
         phrases: "LE MIE FRASI",
         voice: "VOCE",
         about: "INFORMAZIONI"
+    },
+
+    es: {
+        title: "Quiero decirle…",
+        respiration: "RESPIRACIÓN /<br>GARGANTA",
+        pain: "TENGO DOLOR",
+        position: "POSICIÓN",
+        care: "NECESITO CUIDADOS",
+        hygiene: "ASEO /<br>HIGIENE",
+        environment: "MI HABITACIÓN",
+        questions: "PREGUNTAS<br>AL MÉDICO",
+        understand: "COMPRENDER",
+        talk: "FAMILIA / AMIGOS",
+        emotions: "EMOCIONES",
+        recharge: "CARGUE<br>MI TELÉFONO",
+        rechargeSpeech: "Cargue mi teléfono, por favor",
+        phrases: "MIS FRASES",
+        voice: "VOZ",
+        about: "ACERCA DE"
+    },
+
+    pt: {
+        title: "Quero dizer-lhe…",
+        respiration: "RESPIRAÇÃO /<br>GARGANTA",
+        pain: "TENHO DOR",
+        position: "POSIÇÃO",
+        care: "PRECISO DE CUIDADOS",
+        hygiene: "HIGIENE /<br>CASA DE BANHO",
+        environment: "O MEU QUARTO",
+        questions: "PERGUNTAS<br>AO MÉDICO",
+        understand: "COMPREENDER",
+        talk: "FAMÍLIA / AMIGOS",
+        emotions: "EMOÇÕES",
+        recharge: "CARREGUE<br>O MEU TELEFONE",
+        rechargeSpeech: "Carregue o meu telefone, por favor",
+        phrases: "AS MINHAS FRASES",
+        voice: "VOZ",
+        about: "SOBRE"
     }
 
 };
@@ -392,6 +474,98 @@ const RESPIRATION_TRANSLATIONS = {
             label: "RESTI<br>CON ME",
             speech: "Rimanga con me, per favore"
         }
+    },
+
+
+    es: {
+
+        title: "Respiración",
+
+        breathing: {
+            label: "ME CUESTA<br>RESPIRAR"
+        },
+
+        suction: {
+            label: "NECESITO<br>ASPIRACIÓN"
+        },
+
+        secretions: {
+            label: "SECRECIONES"
+        },
+
+        blocked: {
+            label: "PARECE<br>OBSTRUIDO"
+        },
+
+        tracheostomyPain: {
+            label: "DOLOR ALREDEDOR<br>DE LA TRAQUEOSTOMÍA"
+        },
+
+        dryThroat: {
+            label: "GARGANTA SECA"
+        },
+
+        dryMouth: {
+            label: "BOCA SECA"
+        },
+
+        better: {
+            label: "ESTOY MEJOR"
+        },
+
+        notBetter: {
+            label: "NO ESTOY<br>MEJOR"
+        },
+
+        stay: {
+            label: "QUÉDESE<br>CONMIGO"
+        }
+    },
+
+
+    pt: {
+
+        title: "Respiração",
+
+        breathing: {
+            label: "TENHO DIFICULDADE<br>EM RESPIRAR"
+        },
+
+        suction: {
+            label: "PRECISO DE<br>ASPIRAÇÃO"
+        },
+
+        secretions: {
+            label: "SECREÇÕES"
+        },
+
+        blocked: {
+            label: "PARECE<br>OBSTRUÍDO"
+        },
+
+        tracheostomyPain: {
+            label: "DOR À VOLTA<br>DA TRAQUEOSTOMIA"
+        },
+
+        dryThroat: {
+            label: "GARGANTA SECA"
+        },
+
+        dryMouth: {
+            label: "BOCA SECA"
+        },
+
+        better: {
+            label: "ESTOU MELHOR"
+        },
+
+        notBetter: {
+            label: "AINDA NÃO<br>ESTOU MELHOR"
+        },
+
+        stay: {
+            label: "FIQUE<br>COMIGO"
+        }
     }
 
 };
@@ -432,6 +606,22 @@ const PAIN_TRANSLATIONS = {
         detail: "Dove esattamente?",
         intensity: "Quanto è forte il dolore?",
         changeLocation: "← CAMBIA ZONA"
+    },
+
+    es: {
+        title: "Dolor",
+        where: "¿Dónde le duele?",
+        detail: "¿Dónde exactamente?",
+        intensity: "¿Qué intensidad tiene?",
+        changeLocation: "← CAMBIAR ZONA"
+    },
+
+    pt: {
+        title: "Dor",
+        where: "Onde lhe dói?",
+        detail: "Onde exatamente?",
+        intensity: "Qual é a intensidade?",
+        changeLocation: "← MUDAR LOCAL"
     }
 
 };
@@ -917,6 +1107,70 @@ const PAIN_LOCATIONS = {
             label: "PIEDE<br>DESTRO",
             speech: "Ho dolore al piede destro"
         }
+    }
+
+};
+
+const PAIN_LOCATION_PATIENT_LABELS = {
+
+    es: {
+        head: "CABEZA",
+        neck: "CUELLO",
+        throat: "GARGANTA",
+        chest: "PECHO",
+        back: "ESPALDA",
+        abdomen: "VIENTRE",
+
+        leftShoulder: "HOMBRO<br>IZQUIERDO",
+        rightShoulder: "HOMBRO<br>DERECHO",
+
+        leftArm: "BRAZO<br>IZQUIERDO",
+        rightArm: "BRAZO<br>DERECHO",
+
+        leftHand: "MANO<br>IZQUIERDA",
+        rightHand: "MANO<br>DERECHA",
+
+        leftHip: "CADERA<br>IZQUIERDA",
+        rightHip: "CADERA<br>DERECHA",
+
+        buttocks: "NALGAS",
+        anus: "ANO",
+
+        leftLeg: "PIERNA<br>IZQUIERDA",
+        rightLeg: "PIERNA<br>DERECHA",
+
+        leftFoot: "PIE<br>IZQUIERDO",
+        rightFoot: "PIE<br>DERECHO"
+    },
+
+    pt: {
+        head: "CABEÇA",
+        neck: "PESCOÇO",
+        throat: "GARGANTA",
+        chest: "PEITO",
+        back: "COSTAS",
+        abdomen: "BARRIGA",
+
+        leftShoulder: "OMBRO<br>ESQUERDO",
+        rightShoulder: "OMBRO<br>DIREITO",
+
+        leftArm: "BRAÇO<br>ESQUERDO",
+        rightArm: "BRAÇO<br>DIREITO",
+
+        leftHand: "MÃO<br>ESQUERDA",
+        rightHand: "MÃO<br>DIREITA",
+
+        leftHip: "ANCA<br>ESQUERDA",
+        rightHip: "ANCA<br>DIREITA",
+
+        buttocks: "NÁDEGAS",
+        anus: "ÂNUS",
+
+        leftLeg: "PERNA<br>ESQUERDA",
+        rightLeg: "PERNA<br>DIREITA",
+
+        leftFoot: "PÉ<br>ESQUERDO",
+        rightFoot: "PÉ<br>DIREITO"
     }
 
 };
@@ -1460,6 +1714,117 @@ const PAIN_SUBLOCATIONS = {
 
 };
 
+const PAIN_SUBLOCATION_PATIENT_LABELS = {
+
+    es: {
+
+        head: {
+            front: "FRENTE",
+            backHead: "PARTE POSTERIOR<br>DE LA CABEZA",
+            leftTemple: "SIEN<br>IZQUIERDA",
+            rightTemple: "SIEN<br>DERECHA",
+            leftEye: "OJO<br>IZQUIERDO",
+            rightEye: "OJO<br>DERECHO",
+            leftEar: "OÍDO<br>IZQUIERDO",
+            rightEar: "OÍDO<br>DERECHO",
+            jaw: "MANDÍBULA",
+            wholeHead: "TODA<br>LA CABEZA"
+        },
+
+        chest: {
+            left: "IZQUIERDA",
+            right: "DERECHA",
+            leftRibs: "COSTILLAS<br>IZQUIERDAS",
+            rightRibs: "COSTILLAS<br>DERECHAS",
+            center: "CENTRO",
+            wholeChest: "TODO<br>EL PECHO"
+        },
+
+        back: {
+            upper: "PARTE<br>SUPERIOR",
+            middle: "CENTRO",
+            left: "IZQUIERDA",
+            right: "DERECHA",
+            lower: "PARTE<br>INFERIOR",
+            wholeBack: "TODA<br>LA ESPALDA"
+        },
+
+        abdomen: {
+            upper: "PARTE<br>SUPERIOR",
+            center: "CENTRO",
+            left: "IZQUIERDA",
+            right: "DERECHA",
+            lowerAbdomen: "BAJO<br>VIENTRE",
+            bladder: "VEJIGA",
+            genitals: "ÓRGANOS<br>GENITALES",
+            wholeAbdomen: "TODO<br>EL VIENTRE"
+        },
+
+        buttocks: {
+            left: "IZQUIERDA",
+            right: "DERECHA",
+            sacrumCoccyx: "SACRO /<br>CÓCCIX",
+            both: "AMBAS<br>NALGAS"
+        }
+
+    },
+
+
+    pt: {
+
+        head: {
+            front: "TESTA",
+            backHead: "PARTE DE TRÁS<br>DA CABEÇA",
+            leftTemple: "TÊMPORA<br>ESQUERDA",
+            rightTemple: "TÊMPORA<br>DIREITA",
+            leftEye: "OLHO<br>ESQUERDO",
+            rightEye: "OLHO<br>DIREITO",
+            leftEar: "OUVIDO<br>ESQUERDO",
+            rightEar: "OUVIDO<br>DIREITO",
+            jaw: "MANDÍBULA",
+            wholeHead: "TODA<br>A CABEÇA"
+        },
+
+        chest: {
+            left: "ESQUERDA",
+            right: "DIREITA",
+            leftRibs: "COSTELAS<br>ESQUERDAS",
+            rightRibs: "COSTELAS<br>DIREITAS",
+            center: "CENTRO",
+            wholeChest: "TODO<br>O PEITO"
+        },
+
+        back: {
+            upper: "PARTE<br>SUPERIOR",
+            middle: "MEIO",
+            left: "ESQUERDA",
+            right: "DIREITA",
+            lower: "PARTE<br>INFERIOR",
+            wholeBack: "TODAS<br>AS COSTAS"
+        },
+
+        abdomen: {
+            upper: "PARTE<br>SUPERIOR",
+            center: "CENTRO",
+            left: "ESQUERDA",
+            right: "DIREITA",
+            lowerAbdomen: "BAIXO<br>VENTRE",
+            bladder: "BEXIGA",
+            genitals: "ÓRGÃOS<br>GENITAIS",
+            wholeAbdomen: "TODA<br>A BARRIGA"
+        },
+
+        buttocks: {
+            left: "ESQUERDA",
+            right: "DIREITA",
+            sacrumCoccyx: "SACRO /<br>CÓCCIX",
+            both: "AMBAS<br>AS NÁDEGAS"
+        }
+
+    }
+
+};
+
 /* =========================================
    POSITION / CONFORT — TRADUCTIONS
    ========================================= */
@@ -1887,6 +2252,178 @@ const POSITION_TRANSLATIONS = {
             label: "STO BENE<br>COSÌ",
             speech: "Sto bene così"
         }
+    },
+
+
+    es: {
+
+        title: "Posición / Confort",
+
+        bed: {
+            label: "ACUÉSTEME"
+        },
+
+        chair: {
+            label: "SIÉNTEME<br>EN EL SILLÓN"
+        },
+
+        moveUp: {
+            label: "SÚBAME<br>EN LA CAMA"
+        },
+
+        moveDown: {
+            label: "BÁJEME<br>UN POCO"
+        },
+
+        turnLeft: {
+            label: "GÍREME<br>A LA IZQUIERDA"
+        },
+
+        turnRight: {
+            label: "GÍREME<br>A LA DERECHA"
+        },
+
+        sitUp: {
+            label: "INCORPÓREME"
+        },
+
+        flatter: {
+            label: "ACUÉSTEME<br>MÁS"
+        },
+
+        headUp: {
+            label: "SUBA LA CABECERA<br>DE LA CAMA"
+        },
+
+        headDown: {
+            label: "BAJE LA CABECERA<br>DE LA CAMA"
+        },
+
+        legsUp: {
+            label: "SUBA<br>MIS PIERNAS"
+        },
+
+        legsDown: {
+            label: "BAJE<br>MIS PIERNAS"
+        },
+
+        pillow: {
+            label: "ALMOHADA"
+        },
+
+        removePillow: {
+            label: "QUITE<br>LA ALMOHADA"
+        },
+
+        hot: {
+            label: "TENGO CALOR"
+        },
+
+        cold: {
+            label: "TENGO FRÍO"
+        },
+
+        blanket: {
+            label: "MANTA"
+        },
+
+        removeBlanket: {
+            label: "QUITE<br>LA MANTA"
+        },
+
+        positionHurts: {
+            label: "ESTA POSICIÓN<br>ME DUELE"
+        },
+
+        comfortable: {
+            label: "ESTOY BIEN<br>ASÍ"
+        }
+    },
+
+
+    pt: {
+
+        title: "Posição / Conforto",
+
+        bed: {
+            label: "DEITE-ME"
+        },
+
+        chair: {
+            label: "SENTE-ME<br>NA CADEIRA"
+        },
+
+        moveUp: {
+            label: "SUBA-ME<br>NA CAMA"
+        },
+
+        moveDown: {
+            label: "DESÇA-ME<br>UM POUCO"
+        },
+
+        turnLeft: {
+            label: "VIRE-ME<br>PARA A ESQUERDA"
+        },
+
+        turnRight: {
+            label: "VIRE-ME<br>PARA A DIREITA"
+        },
+
+        sitUp: {
+            label: "SENTE-ME<br>MAIS DIREITO"
+        },
+
+        flatter: {
+            label: "DEITE-ME<br>MAIS"
+        },
+
+        headUp: {
+            label: "SUBA A CABECEIRA<br>DA CAMA"
+        },
+
+        headDown: {
+            label: "BAIXE A CABECEIRA<br>DA CAMA"
+        },
+
+        legsUp: {
+            label: "LEVANTE<br>AS MINHAS PERNAS"
+        },
+
+        legsDown: {
+            label: "BAIXE<br>AS MINHAS PERNAS"
+        },
+
+        pillow: {
+            label: "ALMOFADA"
+        },
+
+        removePillow: {
+            label: "TIRE<br>A ALMOFADA"
+        },
+
+        hot: {
+            label: "TENHO CALOR"
+        },
+
+        cold: {
+            label: "TENHO FRIO"
+        },
+
+        blanket: {
+            label: "COBERTOR"
+        },
+
+        removeBlanket: {
+            label: "TIRE<br>O COBERTOR"
+        },
+
+        positionHurts: {
+            label: "ESTA POSIÇÃO<br>DÓI"
+        },
+
+        comfortable: {
+            label: "ESTOU BEM<br>ASSIM"
+        }
     }
 
 };
@@ -2258,6 +2795,154 @@ const CARE_TRANSLATIONS = {
             label: "EFFETTO<br>INDESIDERATO",
             speech: "Questo farmaco mi provoca un effetto indesiderato"
         }
+    },
+
+
+    es: {
+
+        title: "Cuidados",
+
+        nurse: {
+            label: "ENFERMERO/A"
+        },
+
+        doctor: {
+            label: "MÉDICO"
+        },
+
+        physio: {
+            label: "FISIOTERAPEUTA"
+        },
+
+        ergo: {
+            label: "TERAPEUTA<br>OCUPACIONAL"
+        },
+
+        logo: {
+            label: "LOGOPEDA"
+        },
+
+        nausea: {
+            label: "TENGO<br>NÁUSEAS"
+        },
+
+        vomit: {
+            label: "VOY A<br>VOMITAR"
+        },
+
+        dizziness: {
+            label: "TENGO<br>MAREOS"
+        },
+
+        weakness: {
+            label: "ME SIENTO<br>DÉBIL"
+        },
+
+        chills: {
+            label: "TENGO<br>ESCALOFRÍOS"
+        },
+
+        urinationPain: {
+            label: "ME DUELE<br>AL ORINAR"
+        },
+
+        constipation: {
+            label: "ESTOY<br>ESTREÑIDO/A"
+        },
+
+        diarrhea: {
+            label: "TENGO<br>DIARREA"
+        },
+
+        gas: {
+            label: "TENGO<br>GASES"
+        },
+
+        painMedication: {
+            label: "MEDICAMENTO<br>PARA EL DOLOR"
+        },
+
+        medicationNotEnough: {
+            label: "EL ANALGÉSICO<br>NO ES SUFICIENTE"
+        },
+
+        sideEffect: {
+            label: "EFECTO<br>SECUNDARIO"
+        }
+    },
+
+
+    pt: {
+
+        title: "Cuidados",
+
+        nurse: {
+            label: "ENFERMEIRO/A"
+        },
+
+        doctor: {
+            label: "MÉDICO"
+        },
+
+        physio: {
+            label: "FISIOTERAPEUTA"
+        },
+
+        ergo: {
+            label: "TERAPEUTA<br>OCUPACIONAL"
+        },
+
+        logo: {
+            label: "TERAPEUTA<br>DA FALA"
+        },
+
+        nausea: {
+            label: "TENHO<br>NÁUSEAS"
+        },
+
+        vomit: {
+            label: "VOU<br>VOMITAR"
+        },
+
+        dizziness: {
+            label: "TENHO<br>TONTURAS"
+        },
+
+        weakness: {
+            label: "SINTO-ME<br>FRACO/A"
+        },
+
+        chills: {
+            label: "TENHO<br>ARREPIOS"
+        },
+
+        urinationPain: {
+            label: "TENHO DOR<br>AO URINAR"
+        },
+
+        constipation: {
+            label: "ESTOU<br>OBSTIPADO/A"
+        },
+
+        diarrhea: {
+            label: "TENHO<br>DIARREIA"
+        },
+
+        gas: {
+            label: "TENHO<br>GASES"
+        },
+
+        painMedication: {
+            label: "ANALGÉSICO"
+        },
+
+        medicationNotEnough: {
+            label: "O ANALGÉSICO<br>NÃO É SUFICIENTE"
+        },
+
+        sideEffect: {
+            label: "EFEITO<br>SECUNDÁRIO"
+        }
     }
 
 };
@@ -2528,6 +3213,114 @@ const HYGIENE_TRANSLATIONS = {
         scratch: {
             label: "GRATTATEMI",
             speech: "Ho bisogno che mi grattiate"
+        }
+    },
+
+
+    es: {
+
+        title: "Aseo / Higiene",
+
+        urinate: {
+            label: "NECESITO<br>ORINAR"
+        },
+
+        stool: {
+            label: "NECESITO<br>DEFECAR"
+        },
+
+        change: {
+            label: "NECESITO<br>QUE ME CAMBIEN"
+        },
+
+        wet: {
+            label: "ESTOY<br>MOJADO/A"
+        },
+
+        clean: {
+            label: "NECESITO<br>QUE ME LIMPIEN"
+        },
+
+        wash: {
+            label: "QUIERO<br>LAVARME"
+        },
+
+        face: {
+            label: "LÁVEME<br>LA CARA"
+        },
+
+        teeth: {
+            label: "CEPILLARME<br>LOS DIENTES"
+        },
+
+        shave: {
+            label: "AFEITARME"
+        },
+
+        shower: {
+            label: "DARME UNA<br>DUCHA"
+        },
+
+        itch: {
+            label: "ME<br>PICA"
+        },
+
+        scratch: {
+            label: "RÁSQUEME"
+        }
+    },
+
+
+    pt: {
+
+        title: "Casa de banho / Higiene",
+
+        urinate: {
+            label: "PRECISO<br>DE URINAR"
+        },
+
+        stool: {
+            label: "PRECISO<br>DE EVACUAR"
+        },
+
+        change: {
+            label: "PRECISO<br>QUE ME MUDEM"
+        },
+
+        wet: {
+            label: "ESTOU<br>MOLHADO/A"
+        },
+
+        clean: {
+            label: "PRECISO<br>QUE ME LIMPEM"
+        },
+
+        wash: {
+            label: "QUERO<br>LAVAR-ME"
+        },
+
+        face: {
+            label: "LAVEM-ME<br>O ROSTO"
+        },
+
+        teeth: {
+            label: "LAVAR<br>OS DENTES"
+        },
+
+        shave: {
+            label: "FAZER<br>A BARBA"
+        },
+
+        shower: {
+            label: "TOMAR<br>BANHO"
+        },
+
+        itch: {
+            label: "TENHO<br>COMICHÃO"
+        },
+
+        scratch: {
+            label: "COCEM-ME"
         }
     }
 
@@ -2819,6 +3612,122 @@ const EMOTION_TRANSLATIONS = {
         noTalk: {
             label: "NON VOGLIO<br>PARLARE",
             speech: "Non voglio parlare adesso"
+        }
+    },
+
+
+    es: {
+
+        title: "Emociones",
+
+        afraid: {
+            label: "TENGO MIEDO"
+        },
+
+        sad: {
+            label: "ESTOY<br>TRISTE"
+        },
+
+        angry: {
+            label: "ESTOY<br>ENFADADO/A"
+        },
+
+        fedUp: {
+            label: "ESTOY<br>HARTO/A"
+        },
+
+        discouraged: {
+            label: "ESTOY<br>DESANIMADO/A"
+        },
+
+        lonely: {
+            label: "ME SIENTO<br>SOLO/A"
+        },
+
+        tired: {
+            label: "ESTOY<br>CANSADO/A"
+        },
+
+        bored: {
+            label: "ME ABURRO"
+        },
+
+        happy: {
+            label: "ESTOY<br>CONTENTO/A"
+        },
+
+        better: {
+            label: "ME SIENTO<br>MEJOR"
+        },
+
+        stay: {
+            label: "QUÉDESE<br>CONMIGO"
+        },
+
+        alone: {
+            label: "QUIERO ESTAR<br>SOLO/A"
+        },
+
+        noTalk: {
+            label: "NO QUIERO<br>HABLAR"
+        }
+    },
+
+
+    pt: {
+
+        title: "Emoções",
+
+        afraid: {
+            label: "TENHO MEDO"
+        },
+
+        sad: {
+            label: "ESTOU<br>TRISTE"
+        },
+
+        angry: {
+            label: "ESTOU<br>ZANGADO/A"
+        },
+
+        fedUp: {
+            label: "ESTOU<br>FARTO/A"
+        },
+
+        discouraged: {
+            label: "ESTOU<br>DESANIMADO/A"
+        },
+
+        lonely: {
+            label: "SINTO-ME<br>SOZINHO/A"
+        },
+
+        tired: {
+            label: "ESTOU<br>CANSADO/A"
+        },
+
+        bored: {
+            label: "ESTOU<br>ABORRECIDO/A"
+        },
+
+        happy: {
+            label: "ESTOU<br>CONTENTE"
+        },
+
+        better: {
+            label: "SINTO-ME<br>MELHOR"
+        },
+
+        stay: {
+            label: "FIQUE<br>COMIGO"
+        },
+
+        alone: {
+            label: "QUERO FICAR<br>SOZINHO/A"
+        },
+
+        noTalk: {
+            label: "NÃO QUERO<br>FALAR"
         }
     }
 
@@ -3250,6 +4159,178 @@ const QUESTIONS_TRANSLATIONS = {
         explainNext: {
             label: "MI SPIEGHI<br>COSA SUCCEDE DOPO",
             speech: "Può spiegarmi cosa succederà dopo?"
+        }
+    },
+
+
+    es: {
+
+        title: "Preguntas",
+
+        whatHappened: {
+            label: "¿QUÉ ME<br>HA PASADO?"
+        },
+
+        injuries: {
+            label: "¿CUÁLES SON<br>MIS LESIONES?"
+        },
+
+        improving: {
+            label: "¿ESTOY<br>MEJORANDO?"
+        },
+
+        concern: {
+            label: "¿QUÉ LE<br>PREOCUPA?"
+        },
+
+        nextGoal: {
+            label: "¿CUÁL ES EL<br>PRÓXIMO OBJETIVO?"
+        },
+
+        exams: {
+            label: "¿QUÉ PRUEBAS<br>ME HARÁN?"
+        },
+
+        resultsWhen: {
+            label: "¿CUÁNDO TENDRÉ<br>LOS RESULTADOS?"
+        },
+
+        resultsMeaning: {
+            label: "¿QUÉ MUESTRAN<br>LOS RESULTADOS?"
+        },
+
+        speakWhen: {
+            label: "¿CUÁNDO PODRÉ<br>VOLVER A HABLAR?"
+        },
+
+        speakNormally: {
+            label: "¿PODRÉ HABLAR<br>NORMALMENTE?"
+        },
+
+        tracheostomyHowLong: {
+            label: "¿CUÁNTO TIEMPO<br>LA TRAQUEOSTOMÍA?"
+        },
+
+        eatWhen: {
+            label: "¿CUÁNDO PODRÉ<br>COMER?"
+        },
+
+        standWhen: {
+            label: "¿CUÁNDO PODRÉ<br>LEVANTARME?"
+        },
+
+        walkWhen: {
+            label: "¿CUÁNDO PODRÉ<br>CAMINAR?"
+        },
+
+        rehabilitation: {
+            label: "¿NECESITARÉ<br>REHABILITACIÓN?"
+        },
+
+        leaveICU: {
+            label: "¿CUÁNDO SALDRÉ DE<br>CUIDADOS INTENSIVOS?"
+        },
+
+        leaveHospital: {
+            label: "¿CUÁNDO PODRÉ<br>SALIR DEL HOSPITAL?"
+        },
+
+        goHome: {
+            label: "¿CUÁNDO PODRÉ<br>VOLVER A CASA?"
+        },
+
+        improveBeforeHome: {
+            label: "¿QUÉ DEBE<br>MEJORAR TODAVÍA?"
+        },
+
+        explainNext: {
+            label: "EXPLÍQUEME<br>QUÉ PASARÁ DESPUÉS"
+        }
+    },
+
+
+    pt: {
+
+        title: "Perguntas",
+
+        whatHappened: {
+            label: "O QUE ME<br>ACONTECEU?"
+        },
+
+        injuries: {
+            label: "QUAIS SÃO<br>AS MINHAS LESÕES?"
+        },
+
+        improving: {
+            label: "ESTOU A<br>MELHORAR?"
+        },
+
+        concern: {
+            label: "O QUE AINDA<br>O PREOCUPA?"
+        },
+
+        nextGoal: {
+            label: "QUAL É O<br>PRÓXIMO OBJETIVO?"
+        },
+
+        exams: {
+            label: "QUE EXAMES<br>VOU FAZER?"
+        },
+
+        resultsWhen: {
+            label: "QUANDO TEREI<br>OS RESULTADOS?"
+        },
+
+        resultsMeaning: {
+            label: "O QUE MOSTRAM<br>OS RESULTADOS?"
+        },
+
+        speakWhen: {
+            label: "QUANDO PODEREI<br>VOLTAR A FALAR?"
+        },
+
+        speakNormally: {
+            label: "PODEREI FALAR<br>NORMALMENTE?"
+        },
+
+        tracheostomyHowLong: {
+            label: "QUANTO TEMPO<br>COM A TRAQUEOSTOMIA?"
+        },
+
+        eatWhen: {
+            label: "QUANDO PODEREI<br>COMER?"
+        },
+
+        standWhen: {
+            label: "QUANDO PODEREI<br>LEVANTAR-ME?"
+        },
+
+        walkWhen: {
+            label: "QUANDO PODEREI<br>CAMINHAR?"
+        },
+
+        rehabilitation: {
+            label: "VOU PRECISAR<br>DE REABILITAÇÃO?"
+        },
+
+        leaveICU: {
+            label: "QUANDO PODEREI SAIR<br>DOS CUIDADOS INTENSIVOS?"
+        },
+
+        leaveHospital: {
+            label: "QUANDO PODEREI<br>SAIR DO HOSPITAL?"
+        },
+
+        goHome: {
+            label: "QUANDO PODEREI<br>VOLTAR PARA CASA?"
+        },
+
+        improveBeforeHome: {
+            label: "O QUE AINDA<br>PRECISA DE MELHORAR?"
+        },
+
+        explainNext: {
+            label: "EXPLIQUE-ME<br>O QUE VAI ACONTECER"
         }
     }
 
@@ -3722,6 +4803,194 @@ const ENVIRONMENT_TRANSLATIONS = {
             label: "LASCIATEMI<br>DORMIRE",
             speech: "Non svegliatemi a meno che non sia necessario"
         }
+    },
+
+
+    es: {
+
+        title: "Mi habitación",
+
+        closeDoor: {
+            label: "CIERRE<br>LA PUERTA"
+        },
+
+        openDoor: {
+            label: "ABRA<br>LA PUERTA"
+        },
+
+        closeCurtains: {
+            label: "CIERRE<br>LAS CORTINAS"
+        },
+
+        openCurtains: {
+            label: "ABRA<br>LAS CORTINAS"
+        },
+
+        lightOn: {
+            label: "ENCIENDA<br>LA LUZ"
+        },
+
+        lightOff: {
+            label: "APAGUE<br>LA LUZ"
+        },
+
+        noise: {
+            label: "DEMASIADO<br>RUIDO"
+        },
+
+        silence: {
+            label: "QUIERO<br>SILENCIO"
+        },
+
+        openWindow: {
+            label: "ABRA<br>LA VENTANA"
+        },
+
+        closeWindow: {
+            label: "CIERRE<br>LA VENTANA"
+        },
+
+        television: {
+            label: "TELEVISIÓN"
+        },
+
+        televisionOff: {
+            label: "APAGUE<br>LA TELEVISIÓN"
+        },
+
+        music: {
+            label: "MÚSICA"
+        },
+
+        musicOff: {
+            label: "APAGUE<br>LA MÚSICA"
+        },
+
+        coverMe: {
+            label: "TÁPEME"
+        },
+
+        glasses: {
+            label: "MIS<br>GAFAS"
+        },
+
+        hearingAid: {
+            label: "MI<br>AUDÍFONO"
+        },
+
+        privacy: {
+            label: "QUIERO<br>PRIVACIDAD"
+        },
+
+        noOneDuringCare: {
+            label: "NADIE DURANTE<br>LOS CUIDADOS"
+        },
+
+        notInFront: {
+            label: "NO DELANTE DE<br>ESTA PERSONA"
+        },
+
+        sleep: {
+            label: "QUIERO<br>DORMIR"
+        },
+
+        doNotWake: {
+            label: "DÉJEME<br>DORMIR"
+        }
+    },
+
+
+    pt: {
+
+        title: "O meu quarto",
+
+        closeDoor: {
+            label: "FECHE<br>A PORTA"
+        },
+
+        openDoor: {
+            label: "ABRA<br>A PORTA"
+        },
+
+        closeCurtains: {
+            label: "FECHE<br>AS CORTINAS"
+        },
+
+        openCurtains: {
+            label: "ABRA<br>AS CORTINAS"
+        },
+
+        lightOn: {
+            label: "ACENDA<br>A LUZ"
+        },
+
+        lightOff: {
+            label: "APAGUE<br>A LUZ"
+        },
+
+        noise: {
+            label: "DEMASIADO<br>BARULHO"
+        },
+
+        silence: {
+            label: "QUERO<br>SILÊNCIO"
+        },
+
+        openWindow: {
+            label: "ABRA<br>A JANELA"
+        },
+
+        closeWindow: {
+            label: "FECHE<br>A JANELA"
+        },
+
+        television: {
+            label: "TELEVISÃO"
+        },
+
+        televisionOff: {
+            label: "DESLIGUE<br>A TELEVISÃO"
+        },
+
+        music: {
+            label: "MÚSICA"
+        },
+
+        musicOff: {
+            label: "DESLIGUE<br>A MÚSICA"
+        },
+
+        coverMe: {
+            label: "TAPE-ME"
+        },
+
+        glasses: {
+            label: "OS MEUS<br>ÓCULOS"
+        },
+
+        hearingAid: {
+            label: "O MEU APARELHO<br>AUDITIVO"
+        },
+
+        privacy: {
+            label: "QUERO<br>PRIVACIDADE"
+        },
+
+        noOneDuringCare: {
+            label: "NINGUÉM DURANTE<br>OS CUIDADOS"
+        },
+
+        notInFront: {
+            label: "NÃO DIANTE<br>DESTA PESSOA"
+        },
+
+        sleep: {
+            label: "QUERO<br>DORMIR"
+        },
+
+        doNotWake: {
+            label: "DEIXE-ME<br>DORMIR"
+        }
     }
 
 };
@@ -3952,6 +5221,98 @@ const UNDERSTAND_TRANSLATIONS = {
         misunderstood: {
             label: "HA CAPITO<br>MALE",
             speech: "Ha capito male quello che volevo dire"
+        }
+    },
+
+
+    es: {
+
+        title: "Comprender",
+
+        wait: {
+            label: "ESPERE<br>NO HE TERMINADO"
+        },
+
+        choices: {
+            label: "DÉME<br>LAS OPCIONES"
+        },
+
+        notUnderstand: {
+            label: "NO HE<br>ENTENDIDO"
+        },
+
+        write: {
+            label: "QUIERO<br>ESCRIBIRLO"
+        },
+
+        louder: {
+            label: "HABLE<br>MÁS ALTO"
+        },
+
+        slower: {
+            label: "HABLE MÁS<br>DESPACIO"
+        },
+
+        yesNo: {
+            label: "PREGUNTA<br>SÍ / NO"
+        },
+
+        repeat: {
+            label: "REPITA"
+        },
+
+        oneQuestion: {
+            label: "UNA PREGUNTA<br>A LA VEZ"
+        },
+
+        misunderstood: {
+            label: "ME HA<br>ENTENDIDO MAL"
+        }
+    },
+
+
+    pt: {
+
+        title: "Compreender",
+
+        wait: {
+            label: "ESPERE<br>AINDA NÃO TERMINEI"
+        },
+
+        choices: {
+            label: "DÊ-ME<br>AS OPÇÕES"
+        },
+
+        notUnderstand: {
+            label: "NÃO<br>PERCEBI"
+        },
+
+        write: {
+            label: "QUERO<br>ESCREVER"
+        },
+
+        louder: {
+            label: "FALE<br>MAIS ALTO"
+        },
+
+        slower: {
+            label: "FALE MAIS<br>DEVAGAR"
+        },
+
+        yesNo: {
+            label: "PERGUNTA<br>SIM / NÃO"
+        },
+
+        repeat: {
+            label: "REPITA"
+        },
+
+        oneQuestion: {
+            label: "UMA PERGUNTA<br>DE CADA VEZ"
+        },
+
+        misunderstood: {
+            label: "NÃO ME<br>PERCEBEU BEM"
         }
     }
 
@@ -4344,6 +5705,162 @@ const TALK_TRANSLATIONS = {
             label: "CONTINUA",
             speech: "Continua"
         }
+    },
+
+
+    es: {
+
+        title: "Familia / Amigos",
+
+        hello: {
+            label: "HOLA"
+        },
+
+        seeYou: {
+            label: "HASTA PRONTO"
+        },
+
+        happyToSee: {
+            label: "ME ALEGRA<br>VERTE"
+        },
+
+        missedYou: {
+            label: "TE HE<br>ECHADO DE MENOS"
+        },
+
+        loveYou: {
+            label: "TE QUIERO"
+        },
+
+        thankYou: {
+            label: "GRACIAS"
+        },
+
+        sorry: {
+            label: "LO SIENTO"
+        },
+
+        dontWorry: {
+            label: "NO TE<br>PREOCUPES"
+        },
+
+        stayLonger: {
+            label: "QUÉDATE UN POCO<br>MÁS"
+        },
+
+        tellMe: {
+            label: "CUÉNTAME"
+        },
+
+        gettingBetter: {
+            label: "ESTOY<br>MEJORANDO"
+        },
+
+        doingWell: {
+            label: "ESTOY BIEN"
+        },
+
+        tiredButOkay: {
+            label: "ESTOY CANSADO/A,<br>PERO ESTOY BIEN"
+        },
+
+        dontKnow: {
+            label: "NO LO SÉ"
+        },
+
+        asYouWant: {
+            label: "COMO QUIERAS"
+        },
+
+        maybe: {
+            label: "QUIZÁS"
+        },
+
+        changeSubject: {
+            label: "CAMBIEMOS<br>DE TEMA"
+        },
+
+        continue: {
+            label: "CONTINÚA"
+        }
+    },
+
+
+    pt: {
+
+        title: "Família / Amigos",
+
+        hello: {
+            label: "OLÁ"
+        },
+
+        seeYou: {
+            label: "ATÉ BREVE"
+        },
+
+        happyToSee: {
+            label: "ESTOU CONTENTE<br>POR TE VER"
+        },
+
+        missedYou: {
+            label: "TIVE SAUDADES<br>TUAS"
+        },
+
+        loveYou: {
+            label: "AMO-TE"
+        },
+
+        thankYou: {
+            label: "OBRIGADO/A"
+        },
+
+        sorry: {
+            label: "DESCULPA"
+        },
+
+        dontWorry: {
+            label: "NÃO TE<br>PREOCUPES"
+        },
+
+        stayLonger: {
+            label: "FICA MAIS<br>UM POUCO"
+        },
+
+        tellMe: {
+            label: "CONTA-ME"
+        },
+
+        gettingBetter: {
+            label: "ESTOU A<br>MELHORAR"
+        },
+
+        doingWell: {
+            label: "ESTOU BEM"
+        },
+
+        tiredButOkay: {
+            label: "ESTOU CANSADO/A,<br>MAS ESTOU BEM"
+        },
+
+        dontKnow: {
+            label: "NÃO SEI"
+        },
+
+        asYouWant: {
+            label: "COMO QUISERES"
+        },
+
+        maybe: {
+            label: "TALVEZ"
+        },
+
+        changeSubject: {
+            label: "MUDEMOS<br>DE ASSUNTO"
+        },
+
+        continue: {
+            label: "CONTINUA"
+        }
     }
 
 };
@@ -4689,8 +6206,180 @@ const WRITE_TRANSLATIONS = {
 		favoriteAdded:
 			"Frase salvata.",
 
-		deleteConfirm:
-			"Eliminare questa frase?"
+        deleteConfirm:
+            "Eliminare questa frase?"
+    },
+
+
+    es: {
+
+        title: "Mis frases",
+
+        starters: {
+
+            wouldLike: {
+                label: "QUISIERA…",
+                text: "Quisiera "
+            },
+
+            need: {
+                label: "NECESITO…",
+                text: "Necesito "
+            },
+
+            want: {
+                label: "QUIERO…",
+                text: "Quiero "
+            },
+
+            dontWant: {
+                label: "NO QUIERO…",
+                text: "No quiero "
+            },
+
+            canYou: {
+                label: "¿PUEDE…?",
+                text: "Puede "
+            },
+
+            helpMe: {
+                label: "AYÚDEME A…",
+                text: "Ayúdeme a "
+            },
+
+            when: {
+                label: "¿CUÁNDO…?",
+                text: "Cuándo "
+            },
+
+            why: {
+                label: "¿POR QUÉ…?",
+                text: "Por qué "
+            },
+
+            isIt: {
+                label: "¿ES…?",
+                text: "Es "
+            },
+
+            think: {
+                label: "CREO QUE…",
+                text: "Creo que "
+            }
+        },
+
+        placeholder:
+            "Escriba aquí lo que quiere decir...",
+
+        clear:
+            "🗑️ BORRAR",
+
+        speak:
+            "🔊 DECIR",
+
+        save:
+            "⭐ GUARDAR",
+
+        personalTitle:
+            "Mis frases personales",
+
+        noFavorites:
+            "Todavía no hay frases personales.",
+
+        duplicateFavorite:
+            "Esta frase ya está en sus favoritos.",
+
+        favoriteAdded:
+            "Frase guardada.",
+
+        deleteConfirm:
+            "¿Eliminar esta frase?"
+    },
+
+
+    pt: {
+
+        title: "As minhas frases",
+
+        starters: {
+
+            wouldLike: {
+                label: "GOSTARIA DE…",
+                text: "Gostaria de "
+            },
+
+            need: {
+                label: "PRECISO DE…",
+                text: "Preciso de "
+            },
+
+            want: {
+                label: "QUERO…",
+                text: "Quero "
+            },
+
+            dontWant: {
+                label: "NÃO QUERO…",
+                text: "Não quero "
+            },
+
+            canYou: {
+                label: "PODE…?",
+                text: "Pode "
+            },
+
+            helpMe: {
+                label: "AJUDE-ME A…",
+                text: "Ajude-me a "
+            },
+
+            when: {
+                label: "QUANDO…?",
+                text: "Quando "
+            },
+
+            why: {
+                label: "PORQUÊ…?",
+                text: "Porquê "
+            },
+
+            isIt: {
+                label: "É…?",
+                text: "É "
+            },
+
+            think: {
+                label: "PENSO QUE…",
+                text: "Penso que "
+            }
+        },
+
+        placeholder:
+            "Escreva aqui o que quer dizer...",
+
+        clear:
+            "🗑️ APAGAR",
+
+        speak:
+            "🔊 DIZER",
+
+        save:
+            "⭐ GUARDAR",
+
+        personalTitle:
+            "As minhas frases pessoais",
+
+        noFavorites:
+            "Ainda não há frases pessoais.",
+
+        duplicateFavorite:
+            "Esta frase já está nos favoritos.",
+
+        favoriteAdded:
+            "Frase guardada.",
+
+        deleteConfirm:
+            "Eliminar esta frase?"
     }
 
 };
@@ -5887,16 +7576,39 @@ function updatePainLanguage() {
                     locationKey
                 ];
 
+            let label = "";
+
             if (
-                element &&
                 location &&
                 location[patientLanguage]
             ) {
 
-                element.innerHTML =
+                label =
                     location[
                         patientLanguage
                     ].label;
+            }
+            else if (
+                PAIN_LOCATION_PATIENT_LABELS[
+                    patientLanguage
+                ]
+            ) {
+
+                label =
+                    PAIN_LOCATION_PATIENT_LABELS[
+                        patientLanguage
+                    ][
+                        locationKey
+                    ] || "";
+            }
+
+            if (
+                element &&
+                label
+            ) {
+
+                element.innerHTML =
+                    label;
             }
 
         }
@@ -6221,7 +7933,7 @@ let caregiverLanguage = readLocalSetting(
 );
 
 
-if (!SUPPORTED_LANGUAGES.includes(patientLanguage)) {
+if (!PATIENT_LANGUAGES.includes(patientLanguage)) {
     patientLanguage = "fr";
 }
 
@@ -6257,7 +7969,9 @@ const SPEECH_LANGUAGE_NAMES = {
     fr: "Français",
     en: "English",
     de: "Deutsch",
-    it: "Italiano"
+    it: "Italiano",
+    es: "Español",
+    pt: "Português"
 };
 
 const MISSING_VOICE_TRANSLATIONS = {
@@ -6804,11 +8518,16 @@ function openMissingVoiceModal(language) {
        L'anglais sert uniquement de secours.
     */
 
-    const translation =
-        MISSING_VOICE_TRANSLATIONS[
-            language
-        ] ||
-        MISSING_VOICE_TRANSLATIONS.en;
+	const popupLanguage =
+		SUPPORTED_LANGUAGES.includes(language)
+			? language
+			: caregiverLanguage;
+
+	const translation =
+		MISSING_VOICE_TRANSLATIONS[
+			popupLanguage
+		] ||
+		MISSING_VOICE_TRANSLATIONS.en;
 
 
     const languageName =
@@ -7075,11 +8794,18 @@ function showAvailableVoiceLanguages() {
     }
 
 
-    const translation =
-        MISSING_VOICE_TRANSLATIONS[
-            missingVoiceLanguage
-        ] ||
-        MISSING_VOICE_TRANSLATIONS.en;
+	const popupLanguage =
+		SUPPORTED_LANGUAGES.includes(
+			missingVoiceLanguage
+		)
+			? missingVoiceLanguage
+			: caregiverLanguage;
+
+	const translation =
+		MISSING_VOICE_TRANSLATIONS[
+			popupLanguage
+		] ||
+		MISSING_VOICE_TRANSLATIONS.en;
 
 
     const help =
@@ -7208,11 +8934,18 @@ function showVoiceInstallationHelp() {
     }
 
 
-    const translation =
-        MISSING_VOICE_TRANSLATIONS[
-            missingVoiceLanguage
-        ] ||
-        MISSING_VOICE_TRANSLATIONS.en;
+	const popupLanguage =
+		SUPPORTED_LANGUAGES.includes(
+			missingVoiceLanguage
+		)
+			? missingVoiceLanguage
+			: caregiverLanguage;
+
+	const translation =
+		MISSING_VOICE_TRANSLATIONS[
+			popupLanguage
+		] ||
+		MISSING_VOICE_TRANSLATIONS.en;
 
 
     const availableContainer =
@@ -7600,7 +9333,7 @@ function openVoiceScreen() {
 
 function choosePatientLanguage(language) {
 
-    if (!SUPPORTED_LANGUAGES.includes(language)) {
+	if (!PATIENT_LANGUAGES.includes(language)) {
         return;
     }
 
@@ -8123,11 +9856,44 @@ function renderPainDetailButtons() {
             const detail =
                 entry[1];
 
-            const label =
+            let label = "";
+
+            if (
                 detail.label[
                     patientLanguage
-                ] ||
-                detail.label.fr;
+                ]
+            ) {
+
+                label =
+                    detail.label[
+                        patientLanguage
+                    ];
+            }
+            else if (
+                PAIN_SUBLOCATION_PATIENT_LABELS[
+                    patientLanguage
+                ] &&
+                PAIN_SUBLOCATION_PATIENT_LABELS[
+                    patientLanguage
+                ][
+                    selectedPainLocation
+                ]
+            ) {
+
+                label =
+                    PAIN_SUBLOCATION_PATIENT_LABELS[
+                        patientLanguage
+                    ][
+                        selectedPainLocation
+                    ][
+                        detailKey
+                    ] || "";
+            }
+
+            if (label === "") {
+                label =
+                    detail.label.fr;
+            }
 
 
             const button =
