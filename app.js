@@ -46,10 +46,11 @@ const QUICK_PHRASES = {
             label: "YES",
             speech: "Yes"
         },
-        de: {
-            label: "JA",
-            speech: "Ja"
-        it: {
+		de: {
+			label: "JA",
+			speech: "Ja"
+		},
+		it: {
             label: "SÌ",
             speech: "Sì"
         },
