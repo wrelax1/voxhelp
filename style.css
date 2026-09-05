@@ -168,6 +168,28 @@ button:focus-visible {
     white-space: nowrap;
 }
 
+	/* Couleurs des 4 boutons permanents */
+
+	#quickYesButton {
+		background: #DFF3DF;
+		color: #111;
+	}
+
+	#quickNoButton {
+		background: #FFE8A3;
+		color: #111;
+	}
+
+	#quickStopButton {
+		background: #F8D7DA;
+		color: #111;
+	}
+
+	#topRightButton {
+		background: #DCEBFF;
+		color: #111;
+	}
+
 .quick-bar .emergency {
     font-weight: 900;
     border: none;
