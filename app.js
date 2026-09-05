@@ -1936,6 +1936,21 @@ const CARE_TRANSLATIONS = {
             speech: "Je vais vomir"
         },
 
+        dizziness: {
+            label: "J'AI DES<br>VERTIGES",
+            speech: "J’ai des vertiges"
+        },
+
+        weakness: {
+            label: "JE ME SENS<br>FAIBLE",
+            speech: "Je me sens faible"
+        },
+
+        chills: {
+            label: "J'AI DES<br>FRISSONS",
+            speech: "J’ai des frissons"
+        },
+
         urinationPain: {
             label: "J'AI MAL<br>QUAND J'URINE",
             speech: "J’ai mal quand j’urine"
@@ -2010,6 +2025,21 @@ const CARE_TRANSLATIONS = {
         vomit: {
             label: "I'M GOING<br>TO VOMIT",
             speech: "I'm going to vomit"
+        },
+
+        dizziness: {
+            label: "I FEEL<br>DIZZY",
+            speech: "I feel dizzy"
+        },
+
+        weakness: {
+            label: "I FEEL<br>WEAK",
+            speech: "I feel weak"
+        },
+
+        chills: {
+            label: "I HAVE<br>CHILLS",
+            speech: "I have chills"
         },
 
         urinationPain: {
@@ -2088,6 +2118,21 @@ const CARE_TRANSLATIONS = {
             speech: "Ich muss erbrechen"
         },
 
+        dizziness: {
+            label: "MIR IST<br>SCHWINDELIG",
+            speech: "Mir ist schwindelig"
+        },
+
+        weakness: {
+            label: "ICH FÜHLE MICH<br>SCHWACH",
+            speech: "Ich fühle mich schwach"
+        },
+
+        chills: {
+            label: "ICH HABE<br>SCHÜTTELFROST",
+            speech: "Ich habe Schüttelfrost"
+        },
+
         urinationPain: {
             label: "SCHMERZEN BEIM<br>WASSERLASSEN",
             speech: "Ich habe Schmerzen beim Wasserlassen"
@@ -2162,6 +2207,21 @@ const CARE_TRANSLATIONS = {
         vomit: {
             label: "STO PER<br>VOMITARE",
             speech: "Sto per vomitare"
+        },
+
+        dizziness: {
+            label: "HO LE<br>VERTIGINI",
+            speech: "Ho le vertigini"
+        },
+
+        weakness: {
+            label: "MI SENTO<br>DEBOLE",
+            speech: "Mi sento debole"
+        },
+
+        chills: {
+            label: "HO I<br>BRIVIDI",
+            speech: "Ho i brividi"
         },
 
         urinationPain: {
@@ -3280,6 +3340,16 @@ const ENVIRONMENT_TRANSLATIONS = {
             speech: "Couvrez-moi, s’il vous plaît"
         },
 
+        glasses: {
+            label: "MES<br>LUNETTES",
+            speech: "Donnez-moi mes lunettes, s’il vous plaît"
+        },
+
+        hearingAid: {
+            label: "MON APPAREIL<br>AUDITIF",
+            speech: "Donnez-moi mon appareil auditif, s’il vous plaît"
+        },
+
         privacy: {
             label: "JE VEUX<br>DE L'INTIMITÉ",
             speech: "Je voudrais un peu d’intimité"
@@ -3384,6 +3454,16 @@ const ENVIRONMENT_TRANSLATIONS = {
         coverMe: {
             label: "COVER ME",
             speech: "Please cover me"
+        },
+
+        glasses: {
+            label: "MY<br>GLASSES",
+            speech: "Please give me my glasses"
+        },
+
+        hearingAid: {
+            label: "MY HEARING<br>AID",
+            speech: "Please give me my hearing aid"
         },
 
         privacy: {
@@ -3492,6 +3572,16 @@ const ENVIRONMENT_TRANSLATIONS = {
             speech: "Bitte decken Sie mich zu"
         },
 
+        glasses: {
+            label: "MEINE<br>BRILLE",
+            speech: "Bitte geben Sie mir meine Brille"
+        },
+
+        hearingAid: {
+            label: "MEIN<br>HÖRGERÄT",
+            speech: "Bitte geben Sie mir mein Hörgerät"
+        },
+
         privacy: {
             label: "ICH MÖCHTE<br>PRIVATSPHÄRE",
             speech: "Ich möchte etwas Privatsphäre"
@@ -3596,6 +3686,16 @@ const ENVIRONMENT_TRANSLATIONS = {
         coverMe: {
             label: "COPRITEMI",
             speech: "Copritemi, per favore"
+        },
+
+        glasses: {
+            label: "I MIEI<br>OCCHIALI",
+            speech: "Datemi i miei occhiali, per favore"
+        },
+
+        hearingAid: {
+            label: "APPARECCHIO<br>ACUSTICO",
+            speech: "Datemi il mio apparecchio acustico, per favore"
         },
 
         privacy: {
@@ -5024,6 +5124,12 @@ function updateEnvironmentLanguage() {
 
         environmentCoverMeButton:
             translation.coverMe.label,
+			
+        environmentGlassesButton:
+            translation.glasses.label,
+
+        environmentHearingAidButton:
+            translation.hearingAid.label,
 
         environmentPrivacyButton:
             translation.privacy.label,
@@ -5455,6 +5561,15 @@ function updateCareLanguage() {
 
         careVomitButton:
             translation.vomit.label,
+
+        careDizzinessButton:
+            translation.dizziness.label,
+
+        careWeaknessButton:
+            translation.weakness.label,
+
+        careChillsButton:
+            translation.chills.label,
 
         careUrinationPainButton:
             translation.urinationPain.label,
