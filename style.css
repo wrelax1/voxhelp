@@ -236,11 +236,11 @@ button:focus-visible {
 #homeScreen .home-brand-logo {
     display: block;
 
-    width: 36px !important;
-    height: 36px !important;
+    width: 40px !important;
+    height: 40px !important;
 
-    max-width: 36px;
-    max-height: 36px;
+    max-width: 40px;
+    max-height: 40px;
 
     object-fit: contain;
 }
