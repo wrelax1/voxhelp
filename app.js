@@ -822,7 +822,7 @@ const PAIN_LOCATIONS = {
             label: "ANO",
             speech: "Ho dolore all’ano"
         }
-    }
+    },
 
     leftLeg: {
 
